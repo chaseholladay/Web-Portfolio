@@ -1,85 +1,184 @@
 <!DOCTYPE html>
-<html>
-    
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hamburger</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-        <section class="w-section section-imp no-p"><div class="w-row">
-                <div class="w-col w-col-6 w-col-stack">
-                  <div class="w-container"><div class="item-content more-padding">
-                      <h1 class="port-item-title">Hamburger</h1>
-                      <div class="share-wrapper"><ul class="w-list-unstyled">
-                      <li class="w-clearfix li-share">
-                        <a href="#" class="w-clearfix w-inline-block share-link">
-                          <div class="share-icon"><div class="w-embed"><i class="fa fa-eye"></i></div></div>
-                          <div class="share-txt">213</div></a>
-                      </li>
-                      <li class="w-clearfix li-share">
-                        <a href="#" onclick="increase_likes('nr_likes_1176');" class="w-clearfix w-inline-block share-link heart">
-                          <div class="share-icon"><div class="w-embed"><i class="fa fa-heart"></i></div></div>
-                          <div class="share-txt" id="nr_likes_1176">1</div></a>
-                      </li>
-                      <li class="w-clearfix li-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://natalieloman.com/flv_portfolio/burger/" class="w-clearfix w-inline-block share-link facebook">
-                          <div class="share-icon"><div class="w-embed"><i class="fa fa-facebook"></i></div></div></a>
-                      </li>
-                      <li class="w-clearfix li-share">
-                        <a href="https://twitter.com/home?status=http://natalieloman.com/flv_portfolio/burger/" class="w-clearfix w-inline-block share-link twitter">
-                          <div class="share-icon"><div class="w-embed"><i class="fa fa-twitter"></i></div></div></a>
-                      </li>
-                      <li class="w-clearfix li-share no-line">
-                        <a href="https://plus.google.com/share?url=http://natalieloman.com/flv_portfolio/burger/" class="w-clearfix w-inline-block share-link pin">
-                          <div class="share-icon"><div class="w-embed"><i class="fa fa-google-plus"></i></div></div></a>
-                      </li>
-                    </ul></div>
-                      <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 40px"><span class="vc_empty_space_inner"></span></div>
-          
-              <div class="wpb_text_column wpb_content_element ">
-                  <div class="wpb_wrapper">
-                      <p><strong>Project Description</strong></p>
-          <p>A burger logger web application that uses MySQL, Node, Express, Handlebars, and a homemade ORM. It follows the MVC design pattern, uses Node and MySQL to query and route data in the app, and uses Handlebars to generate the HTML.<a id="user-content-how-it-works" class="anchor" href="https://github.com/natplusultra/Burger#how-it-works" aria-hidden="true"></a></p>
-          <p>How It Works</p>
-          <ul>
-          <li>Burger is a restaurant app that lets users input the names of burgers they’d like to eat.</li>
-          <li>Whenever a user submits a burger’s name, the app will display the burger on the left side of the page–waiting to be consumed.</li>
-          <li>Each burger in the waiting area also has a button to eat it. When the user clicks it, the burger will move to the right side of the page.</li>
-          <li>Burgers on the right side of the page have a delete button to remove it from view.</li>
-          <li>The app stores every burger in a database, whether eaten or not.</li>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chase Holladay Web Dev Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Chase Holladay</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
           </ul>
-          
-                  </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Hello, I'm Chase Holladay</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">I'm a full-stack web developer</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">View my work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">What I Strive For</h2>
+            <p class="text-white-50">Graysce on
+              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. Thgfhgfrcial.</p>
+          </div>
+        </div>
+        <img src="img/ipad.png" class="img-fluid" alt="">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Friend Finder</h4>
+              <p class="text-black-50 mb-0">sdjkfkjsdfsdkjf</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-black">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Location</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Minneapolis, Minnesota</div>
               </div>
-          </div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 20px"><span class="vc_empty_space_inner"></span></div>
-          
-              <div class="wpb_text_column wpb_content_element ">
-                  <div class="wpb_wrapper">
-                      <p><strong>Project Details</strong></p>
-          <ul>
-          <li>Technologies Used:&nbsp;HTML, CSS, JavaScript, jQuery, MySQL, Node.js, Express.js, Handlebars, ORM, MVC</li>
-          <li>Date Created: November 2017</li>
-          </ul>
-          
-                  </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">chaseholladay@gmail.com</a>
+                </div>
               </div>
-          <div class="vc_btn3-container vc_btn3-inline">
-              <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-flat vc_btn3-color-grey" href="https://github.com/natplusultra/Burger" title="" target="_blank">Launch Project</a></div>
-          </div></div></div></div>
-           
-                           
-                   <div class="blog-pagination top-space"><div class="w-row">
-             
-              <nav class="navigation post-navigation" role="navigation">
-                  <h2 class="screen-reader-text"> </h2>
-                  <div class="nav-links"><div class="w-col w-col-4"><div class="align-left"><a href="http://natalieloman.com/flv_portfolio/crystals-collector/" rel="prev"><div class="w-embed"><i class="fa fa-angle-left"></i></div></a></div></div><div class="w-col w-col-4"><div class="align-center"><a href="http://natalieloman.com" class="w-inline-block paginaton-but pag-all animsition-link"><div class="w-embed"><i class="fa fa-th"></i></div></a></div></div><div class="w-col w-col-4"><div class="align-right"><a href="http://natalieloman.com/flv_portfolio/rememory/" rel="next"><div class="w-embed"><i class="fa fa-angle-right"></i></div></a></div></div></div>
-              </nav> </div></div>
-                                      </div></div></div>
-                <div class="w-col w-col-6 w-col-stack col-0">
-                    <div><img src="http://natalieloman.com/wp-content/uploads/2017/11/burger-laptop.png"></div> <div><img src="http://natalieloman.com/wp-content/uploads/2018/01/burger_shot.png"></div>      </div></div></section>
-</body>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Phone</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">+1 (808) 349-4076</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+          <a href="https://twitter.com/Chase75Holladay" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="https://www.facebook.com/chase.holladay.9" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://github.com/chaseholladay" class="mx-2">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/chaseholladay/" class="mx-2">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="html-resume/resume.html" class="mx-2">
+            <i class="far fa-file-pdf"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Chase Holladay 2018
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
 </html>
+
