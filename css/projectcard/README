@@ -1,0 +1,8 @@
+project card is the project card on the index.html main page where you click on a img of each project and it takes you to that project page. 
+needed for the project cards are:
+    demo.css
+    reset.css
+    style_common.css
+    style2.css
+
+need to figure out how to link all of these css to each individual project on the index.html
