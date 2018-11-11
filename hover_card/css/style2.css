@@ -110,5 +110,9 @@
    transition-delay: 0.5s;
 }
 
-.burger_shot.png {}
+.view .view-second img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
 				
