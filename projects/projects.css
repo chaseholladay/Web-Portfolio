@@ -1,0 +1,9 @@
+.left {
+    float: right;
+    padding: 20px 20px 20px 20px;
+   }
+.project-image {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+}
